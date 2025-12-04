@@ -10,7 +10,7 @@ GlobalWorkerOptions.workerSrc = new URL(
 
 const sendToBackend = async (extractedText) => {
   try {
-    const res = await fetch("https://YOUR_RENDER_BACKEND_URL/upload_cv", {
+    const res = await fetch("https://technopark-alert-api-1.onrender.com/upload_cv", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
