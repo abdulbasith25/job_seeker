@@ -3,10 +3,7 @@ import mammoth from "mammoth";
 
 import { GlobalWorkerOptions, getDocument } from "pdfjs-dist/legacy/build/pdf";
 
-GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/legacy/build/pdf.worker.min.mjs",
-  import.meta.url
-).toString();
+GlobalWorkerOptions.workerSrc = "/pdfjs/pdf.worker.min.mjs";
 
 const sendToBackend = async (extractedText) => {
   try {
